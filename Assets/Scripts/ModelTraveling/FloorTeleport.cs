@@ -12,6 +12,10 @@ public class FloorTeleport : MonoBehaviour
         {
             TeleportPlayer(other.gameObject);
         }
+        else
+        {
+            Debug.Log("Non-player object entered the teleport area.");
+        }
     }
 
     private void TeleportPlayer(GameObject player)
